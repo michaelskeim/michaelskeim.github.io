@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesPer1.css">
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="hats, hats for sale, customizable hats">
+        <meta name="author" content="Michael Skeim">
+        
+        
+        
+        <link rel="shortcut icon" type="image/x-icon" href="dog.png">
+        
+        <title> </title>
+    </head>
+    
+    <style>
+        .NavBar {
+    background-color: #2F4F4F;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+        
+    </style>
+    
+    <script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+    </script>
+    
+    <body>
+    <header>
+        <div class = "container">
+            <h1>
+            Gallery    
+            </h1>
+            
+            
+            <nav>
+                
+                <ul>
+                    
+                    <li>
+                        <a href = "practicewebsite.html">
+                            <button class = "NavBar">Home</button>
+                        <a/>
+                    </li>
+                    
+                    <li>
+                        <a href = "Gallery.html">
+                            <button class = "NavBar">Gallery</button>
+                            
+                        </a>
+                    </li>
+                    <li> 
+                    
+                        <a href = "Aboutme.html">
+                            
+                             <button class = "NavBar">Shop</button>
+                        </a>
+                    
+                    </li>
+                    <li>
+                        <a href = "Limited.html">
+                            
+                             <button class = "NavBar">Limited runs</button>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                
+                
+                
+            </nav>
+            
+        </div>
+    </header>
+    
+    
+<div class="row">
+  
+    <img src="dog2.jpg" alt="dog2" width="250px" height="200px" onclick="myFunction(this);">
+  
+  
+    <img src="dog1.jpg" alt="dog1" width="250px" height="200px" onclick="myFunction(this);">
+
+    <img src="dog.png" alt="dog" width="250px" height="200px" onclick="myFunction(this);">
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+
+    
+    </body>
+        <footer>
+   
+        <div class="container">
+        
+   
+   <pre> Dogs, Copyright &copy; 2018 </pre>
+    <ul style="list-style-type : none">
+        <li>Written by Michael Skeim <a href = "mailto:michael.ske@lvjusd.org"> Email Me </a></li>
+        <li>Visit our school at <a href = "granadahigh.com/"> Granada High </a></li>
+        <li> Visit our schools computer science department at: <br></li>
+        <li><a href="https://sites.google.com/a/lvjusd.org/baeztech/home">Mr. Baez</a></a></li>
+
+    
+    </ul>
+    
+        
+    </div>
+    
+</footer>
+    
+
+
+</html>

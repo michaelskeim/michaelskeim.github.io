@@ -1,0 +1,134 @@
+body{
+    
+    font-family: arial, helvetica, sans-serif;
+    background-color: rgb(255,255,255);
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    
+}
+
+.container{
+    
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+header{
+    background-color: rgb(90,90,90);
+    color: white;
+    border-bottom:lime 3px solid;
+    min-height: 120px;
+}
+
+nav{
+    float:right;
+    margin-top: 20px;
+}
+
+header h1{
+    float:left;
+}
+header li{
+    
+    display:inline;
+    padding: 0 20px 0 20px;
+    
+}
+header a{
+    text-decoration:none;
+    color:white;
+    
+}
+footer{
+    border-top:lime 3px solid;
+    background-color:rgb(90,90,90);
+    margin:auto;
+}
+
+header .highlight{
+    color : lime;
+    font-weight: bold;
+}
+
+.NavBar:hover{
+    color:grey;
+}
+
+.NavBar:active{
+    color:blue;
+    font-weight: bold;
+}
+
+#main{
+    text-align: left;
+}
+
+#sidebar{
+    float:right;
+    width:30%;
+    margin-bottom:40px;
+    margin-right: 20px;
+}
+
+.dark{
+    padding:15px;
+    background:rgb(90,90,90);
+    color:white;
+    margin-top: 10px;
+}
+@media (max-width: 770px){
+    nav, .hat{
+        float: none;
+    }
+    
+    body, html {
+    height: 100%;
+}
+    .column {
+    float: left;
+    width: 25%;
+}
+
+/* Style the images inside the grid */
+    .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+    .column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+    .container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+    #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the image */
+    .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+}
