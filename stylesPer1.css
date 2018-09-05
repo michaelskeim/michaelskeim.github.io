@@ -46,6 +46,10 @@ footer{
     margin:auto;
 }
 
+#footer{
+    position: fixed;
+}
+
 header .highlight{
     color : lime;
     font-weight: bold;
